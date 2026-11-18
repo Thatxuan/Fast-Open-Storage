@@ -1,3 +1,4 @@
+中文
 纯前端 Minecraft 资源存储器 —— 模组、资源包、光影、整合包一站式检索。
 
 ✨ 功能
@@ -33,3 +34,40 @@
 📄 许可
 
 个人项目，仅供学习与交流使用。
+
+English
+A pure front-end Minecraft resource hub — search mods, resource packs, shaders and modpacks in one place.
+
+✨ Features
+
+· 🔍 Dual-platform search: Java Edition (Modrinth API) + Bedrock Edition (curated built-in data), with pagination, filters by game version / loader / category, and automatic EN→ZH translation
+· 🧍 3D skin preview: Mojang lookup / LittleSkin lookup / local skin, with classic and slim models
+· 🎬 Action switching: walk, run, idle, fly, rotate — state persisted locally
+· ⬇️ Export skin as PNG; export cape in LittleSkin mode
+· 🎭 Import local cape, state persisted
+· 📸 Avatar capture: crop the head region from the 3D model, custom username, avatar and name persisted locally
+· 📁 Local file manager: auto-detect platform for .jar / .zip / .mcpack / .mcaddon; choose shader / resource pack / modpack type for .zip
+· 🖱️ Drag & drop import on desktop; tap-to-select on mobile
+· ⬇️ Download manager and local file records: both persisted, with per-item delete and clear-all
+· 🎨 7 themes: Clear Day, Starry Black, Dark Purple, Sunset Orange, Ocean Blue, Mint Green, plus Follow System; flicker-free switching
+· 🔧 Grouped settings cards: Appearance / Skin & Avatar / Data & Cache / About
+· 🛡️ Hardening: namespaced localStorage with schema version, try/catch on storage access, noopener noreferrer on external links, local error log
+· 💻 Cross-platform font stack (fixes Windows font glitches); desktop layout, hover and scrollbar adaptation
+· 👆 Easter egg: poke the top-left logo — 10 pokes in a row triggers a 💢 explosion
+
+🚀 Usage
+
+Open index.html directly in a browser. No build step, no backend, no dependencies.
+
+⚠️ Known Issues
+
+· Avatar capture may produce a blank image on some devices: the WebGL drawing buffer is cleared during compositing. Fix in progress.
+· LittleSkin login is currently in beta. Login failures are expected and will be improved in future releases.
+
+📦 Tech Stack
+
+Vanilla HTML / CSS / JavaScript · three.js · skinview3d · Modrinth API
+
+📄 License
+
+Personal project, for learning and sharing purposes only.
